@@ -3,6 +3,10 @@ using Android.Widget;
 using Android.OS;
 using Android.Support.V7.Widget;
 
+using Android.Graphics;
+using System.Net;
+using Android.Content;
+
 namespace LongNeckNerd
 {
 	[Activity(Label = "Long Neck Nerd", Icon = "@mipmap/icon")]
@@ -18,6 +22,11 @@ namespace LongNeckNerd
 			SetContentView(Resource.Layout.Main);
 			recycleViewAttractions = FindViewById<RecyclerView>(Resource.Id.recyclerViewAttractions);
 			recycleViewAttractions.SetLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.Vertical, false));
+
+			FindViewById<Button>(Resource.Id.buttonImageURLView).Click += delegate 
+			{
+				StartActivity(typeof(ImageURLViewActivity));	
+			};
 		}
 	}
 }

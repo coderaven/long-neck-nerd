@@ -7,6 +7,9 @@ using Android.Graphics;
 using System.Net;
 using Android.Content;
 
+using Android.Support.V7.CardView;
+using Square.Picasso;
+
 namespace LongNeckNerd
 {
 	[Activity(Label = "Long Neck Nerd", Icon = "@mipmap/icon")]
@@ -34,6 +37,12 @@ namespace LongNeckNerd
 				var mapIntent = new Intent(Intent.ActionView, geoUri);
 				StartActivity(mapIntent);	
 			};
+
+			// Card View
+			var imageView = FindViewById<ImageView>(Resource.Id.imageView);
+			var imageURL = "https://trabblestorageaccount.blob.core.windows.net/trabbleimages/AttractionImages/attraction_attractions_GardensByTheBay.jpg";
+
+			Picasso.With(this).Load(imageURL).Placeholder(Resource.Drawable.placeholder).Into(imageView);
 		}
 	}
 }

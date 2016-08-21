@@ -27,6 +27,13 @@ namespace LongNeckNerd
 			{
 				StartActivity(typeof(ImageURLViewActivity));	
 			};
+
+			FindViewById<Button>(Resource.Id.buttonMapTestView).Click += delegate 
+			{
+				var geoUri = Android.Net.Uri.Parse("geo:42.374260,-71.120824");
+				var mapIntent = new Intent(Intent.ActionView, geoUri);
+				StartActivity(mapIntent);	
+			};
 		}
 	}
 }

@@ -10,6 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonImageURLView" />
+    <Button
+        android:text="Map Test View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMapTestView" />
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerViewAttractions"
         android:layout_width="match_parent"

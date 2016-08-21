@@ -17,6 +17,7 @@ namespace LongNeckNerd
 			// Set our view from the "main" layout resource
 			SetContentView(Resource.Layout.Main);
 			recycleViewAttractions = FindViewById<RecyclerView>(Resource.Id.recyclerViewAttractions);
+			recycleViewAttractions.SetLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.Vertical, false));
 		}
 	}
 }

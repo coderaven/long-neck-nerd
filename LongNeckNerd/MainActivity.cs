@@ -104,8 +104,6 @@ namespace LongNeckNerd
 			{
 				System.Console.WriteLine(attraction.mAttracitionID + " : " + attraction.mAttractionName);
 			}
-
-			//Toast.MakeText(this, e.GetType().ToString(), ToastLength.Long).Show();
 		}
 	}
 }

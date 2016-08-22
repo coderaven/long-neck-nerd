@@ -78,11 +78,17 @@ namespace LongNeckNerd
 
 		public AttractionList()
 		{
-			mAttractions = mBuiltInAttractions;
+			//mAttractions = mBuiltInAttractions;
 
 			//var db = new SQLiteConnection(Attraction.DATABASE_PATH);
 			//var count = db.ExecuteScalar<int>("SELECT Count(*) FROM Person");
-			                      
+
+			// Load Database (Limit to 10 first)
+			var db = new SQLiteConnection(Attraction.DATABASE_PATH);
+			string query = "select ImageUrl as mAttractionImageURL, Description as mAttractionDescription from Attraction limit 10";
+			mAttractions = db.Query<Attraction>(query).ToArray();
+
+
 		}
 
 		public int mAttractionsCount

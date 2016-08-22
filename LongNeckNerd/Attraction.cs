@@ -7,21 +7,26 @@ using Android.Widget;
 using Android.OS;
 using Android.Support.V7.Widget;
 using System.Collections.Generic;
+using SQLite;
 
 namespace LongNeckNerd
 {
+	
 	public class Attraction
 	{
-		public string mAttracitionID;
-		public string mAttractionName;
-		public string mAttractionDescription;
-		public string mAttractionOneLineAddress;
-		public string mAttractionNearestMRT;
-		public string mAttractionImageURL;
-		public string mAttractionLongitude;
-		public string mAttractionLatitude;
-		public string mAttractionCategory;
-		public string mAttractionPrice;
+		static public string DATABASE_NAME = "attraction.db";
+		static public string DATABASE_PATH = System.IO.Path.Combine(Android.OS.Environment.ExternalStorageDirectory.ToString(), DATABASE_NAME);
+
+		public string mAttracitionID { get; set; }
+		public string mAttractionName { get; set; }
+		public string mAttractionDescription { get; set; }
+		public string mAttractionOneLineAddress { get; set; }
+		public string mAttractionNearestMRT { get; set; }
+		public string mAttractionImageURL { get; set; }
+		public string mAttractionLongitude { get; set; }
+		public string mAttractionLatitude { get; set; }
+		public string mAttractionCategory { get; set; }
+		public string mAttractionPrice { get; set; }
 
 		public Attraction()
 		{
@@ -74,6 +79,10 @@ namespace LongNeckNerd
 		public AttractionList()
 		{
 			mAttractions = mBuiltInAttractions;
+
+			//var db = new SQLiteConnection(Attraction.DATABASE_PATH);
+			//var count = db.ExecuteScalar<int>("SELECT Count(*) FROM Person");
+			                      
 		}
 
 		public int mAttractionsCount
@@ -86,6 +95,8 @@ namespace LongNeckNerd
 		{
 			get { return mAttractions[i]; }
 		}
+
+
 
 	}
 }

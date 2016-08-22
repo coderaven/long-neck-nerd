@@ -46,7 +46,7 @@ namespace LongNeckNerd
 			new Attraction {
 				mAttracitionID = "7F0A0C69-7D9A-4895-91B5-7D21DB45BAF8",
 				mAttractionName = "Merlion Park",
-				mAttractionDescription = "Snap a picture with Singapore's national icon, and admire the sweeping views of the Marina Bay from your location."
+				mAttractionDescription = "Snap a picture with Singapore's national icon, and admire the sweeping views of the Marina Bay from your location.",
 				mAttractionOneLineAddress = "@ One Fullerton",
 				mAttractionNearestMRT = "Esplanade",
 				mAttractionImageURL = "https://trabblestorageaccount.blob.core.windows.net/trabbleimages/AttractionImages/attraction_attractions_MerlionPark.jpg",

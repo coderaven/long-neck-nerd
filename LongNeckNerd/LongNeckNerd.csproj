@@ -76,6 +76,8 @@
     <Compile Include="SplashActivity.cs" />
     <Compile Include="ImageURLViewActivity.cs" />
     <Compile Include="Attraction.cs" />
+    <Compile Include="AttractionListAdapter.cs" />
+    <Compile Include="AttractionViewHolder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -98,6 +100,7 @@
     <AndroidResource Include="Resources\drawable\splash_screen.xml" />
     <AndroidResource Include="Resources\layout\ImageURLView.axml" />
     <AndroidResource Include="Resources\drawable\placeholder.jpg" />
+    <AndroidResource Include="Resources\layout\AttractionListLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

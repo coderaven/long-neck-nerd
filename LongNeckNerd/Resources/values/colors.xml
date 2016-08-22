@@ -6,4 +6,6 @@
   <color name="accent">#FFC107</color>
   <color name="window_background">#F5F5F5</color>
   <color name="splash_background">#FFFFFF</color>
+  <color name="bright_yellow">#fff500</color>
+  <color name="dark_brown">#4b1b00</color>
 </resources>

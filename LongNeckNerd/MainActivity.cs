@@ -15,7 +15,7 @@ using System.Collections.Generic;
 
 namespace LongNeckNerd
 {
-	[Activity(Label = "Long Neck Nerd", Icon = "@mipmap/icon")]
+	[Activity(Theme = "@style/CustomActionBarTheme", Label = "Long Neck Nerd", Icon = "@mipmap/icon")]
 	public class MainActivity : Activity
 	{
 		RecyclerView mRecycleViewAttractions;
@@ -31,23 +31,23 @@ namespace LongNeckNerd
 
 			//Toast.MakeText(this, "Hello World!", ToastLength.Long).Show();
 
-			FindViewById<Button>(Resource.Id.buttonImageURLView).Click += delegate 
-			{
-				StartActivity(typeof(ImageURLViewActivity));	
-			};
+			//FindViewById<Button>(Resource.Id.buttonImageURLView).Click += delegate 
+			//{
+			//	StartActivity(typeof(ImageURLViewActivity));	
+			//};
 
-			FindViewById<Button>(Resource.Id.buttonMapTestView).Click += delegate 
-			{
-				var geoUri = Android.Net.Uri.Parse("geo:42.374260,-71.120824");
-				var mapIntent = new Intent(Intent.ActionView, geoUri);
-				StartActivity(mapIntent);	
-			};
+			//FindViewById<Button>(Resource.Id.buttonMapTestView).Click += delegate 
+			//{
+			//	var geoUri = Android.Net.Uri.Parse("geo:42.374260,-71.120824");
+			//	var mapIntent = new Intent(Intent.ActionView, geoUri);
+			//	StartActivity(mapIntent);	
+			//};
 
 			// Card View
-			var imageView = FindViewById<ImageView>(Resource.Id.imageView);
-			var imageURL = "https://trabblestorageaccount.blob.core.windows.net/trabbleimages/AttractionImages/attraction_attractions_GardensByTheBay.jpg";
+			//var imageView = FindViewById<ImageView>(Resource.Id.imageView);
+			//var imageURL = "https://trabblestorageaccount.blob.core.windows.net/trabbleimages/AttractionImages/attraction_attractions_GardensByTheBay.jpg";
 
-			Picasso.With(this).Load(imageURL).Placeholder(Resource.Drawable.placeholder).Into(imageView);
+			//Picasso.With(this).Load(imageURL).Placeholder(Resource.Drawable.placeholder).Into(imageView);
 
 			// Recycle View (using CardView) for Attractions
 
@@ -87,22 +87,6 @@ namespace LongNeckNerd
 					}
 				}
 				Toast.MakeText(this, "Database Copied Successfully!", ToastLength.Long).Show();
-			}
-
-			//Toast.MakeText(this, "Database Loaded Successfully!", ToastLength.Long).Show();
-
-			//var db = new SQLiteConnection(Attraction.DATABASE_PATH);
-			//var count = db.ExecuteScalar<int>("Select count(*) from Attraction;");
-			////Toast.MakeText(this, "Total Count: " + count, ToastLength.Long).Show();
-
-			var db = new SQLiteConnection(Attraction.DATABASE_PATH);
-			string query = "select id as mAttracitionID, name as mAttractionName from Attraction limit 10";
-			IEnumerable<Attraction> attractions = db.Query<Attraction>(query);
-
-			System.Console.WriteLine("----------------");
-			foreach (var attraction in attractions)
-			{
-				System.Console.WriteLine(attraction.mAttracitionID + " : " + attraction.mAttractionName);
 			}
 		}
 	}

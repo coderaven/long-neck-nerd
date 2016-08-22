@@ -6,7 +6,7 @@
     android:layout_height="fill_parent"
     android:gravity="center_horizontal"
     android:padding="5dp">
-    <Button
+<!--<Button
         android:text="ImageURL Test View"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,8 +15,8 @@
         android:text="Map Test View"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonMapTestView" />
-    <android.support.v7.widget.CardView
+        android:id="@+id/buttonMapTestView" />-->
+<!--<android.support.v7.widget.CardView
         android:layout_width="fill_parent"
         android:layout_height="245dp"
         android:layout_gravity="center_horizontal"
@@ -42,7 +42,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="5dp" />
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>-->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerViewAttractions"
         android:scrollbars="vertical"

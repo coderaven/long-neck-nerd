@@ -12,6 +12,7 @@ using Square.Picasso;
 using SQLite;
 using System.IO;
 using System.Collections.Generic;
+using System;
 
 namespace LongNeckNerd
 {
@@ -55,6 +56,7 @@ namespace LongNeckNerd
 
 			// Instantiate the adapter and pass in its data source:
 			mAttractionListAdapter = new AttractionListAdapter(this, mAttractionsList);
+			mAttractionListAdapter.attractionClick += OnAttractionClick;
 
 			// Get our RecyclerView layout:
 			mRecycleViewAttractions = FindViewById<RecyclerView>(Resource.Id.recyclerViewAttractions);
@@ -64,6 +66,12 @@ namespace LongNeckNerd
 
 			mLayoutManager = new LinearLayoutManager(this);
 			mRecycleViewAttractions.SetLayoutManager(mLayoutManager);
+		}
+
+		void OnAttractionClick(object sender, int position)
+		{
+			int attractionNum = position + 1;
+			Toast.MakeText(this, "This is attraction number " + attractionNum, ToastLength.Short).Show();
 		}
 
 		private void prepareDatabase()

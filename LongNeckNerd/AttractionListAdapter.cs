@@ -11,6 +11,8 @@ namespace LongNeckNerd
 	{
 		public AttractionList mAttracitonList;
 		private Context activityContext;
+
+		public event EventHandler<int> attractionClick;
 		
 		public AttractionListAdapter(Context aContext, AttractionList attractionlist)
 		{
@@ -26,7 +28,7 @@ namespace LongNeckNerd
 			                              Inflate(Resource.Layout.AttractionListLayout, parent, false);
 
 			// Create a ViewHolder to hold view references inside the CardView:
-			AttractionViewHolder viewHolder = new AttractionViewHolder(attractionView);
+			AttractionViewHolder viewHolder = new AttractionViewHolder(attractionView, OnClick);
 			return viewHolder;
 		}
 
@@ -54,6 +56,12 @@ namespace LongNeckNerd
 		public override int ItemCount
 		{
 			get { return mAttracitonList.mAttractionsCount; }
+		}
+
+		void OnClick(int position)
+		{
+			if (attractionClick != null)
+				attractionClick(this, position);
 		}
 	}
 }

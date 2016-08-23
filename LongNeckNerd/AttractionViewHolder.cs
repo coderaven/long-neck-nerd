@@ -12,13 +12,15 @@ namespace LongNeckNerd
 		public TextView OneLineAddress { get; private set; }
 		public TextView Price { get; private set; }
 		
-		public AttractionViewHolder(View itemView) : base(itemView)
+		public AttractionViewHolder(View itemView, Action<int> listener) : base(itemView)
 		{
 			// Locate and cache view references:
 			Image = itemView.FindViewById<ImageView>(Resource.Id.imageViewAttraction);
 			Name = itemView.FindViewById<TextView>(Resource.Id.textViewAttractionName);
 			OneLineAddress = itemView.FindViewById<TextView>(Resource.Id.textViewAttractionOneLineAddress);
 			Price = itemView.FindViewById<TextView>(Resource.Id.textViewAttractionPrice);
+
+			itemView.Click += (sender, e) => listener(base.AdapterPosition);
 		}
 	}
 }

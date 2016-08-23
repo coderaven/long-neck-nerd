@@ -1,17 +1,8 @@
-﻿using System;
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Android.OS;
-using Android.Support.V7.Widget;
-using System.Collections.Generic;
-using SQLite;
+﻿using SQLite;
 
 namespace LongNeckNerd
 {
-	
+
 	public class Attraction
 	{
 		static public string DATABASE_NAME = "attraction.db";

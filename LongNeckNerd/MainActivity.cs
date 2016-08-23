@@ -22,29 +22,7 @@ namespace LongNeckNerd
 			SetContentView(Resource.Layout.Main);
 			prepareDatabase();
 
-			//Toast.MakeText(this, "Hello World!", ToastLength.Long).Show();
-
-			//FindViewById<Button>(Resource.Id.buttonImageURLView).Click += delegate 
-			//{
-			//	StartActivity(typeof(ImageURLViewActivity));	
-			//};
-
-			//FindViewById<Button>(Resource.Id.buttonMapTestView).Click += delegate 
-			//{
-			//	var geoUri = Android.Net.Uri.Parse("geo:42.374260,-71.120824");
-			//	var mapIntent = new Intent(Intent.ActionView, geoUri);
-			//	StartActivity(mapIntent);	
-			//};
-
-			// Card View
-			//var imageView = FindViewById<ImageView>(Resource.Id.imageView);
-			//var imageURL = "https://trabblestorageaccount.blob.core.windows.net/trabbleimages/AttractionImages/attraction_attractions_GardensByTheBay.jpg";
-
-			//Picasso.With(this).Load(imageURL).Placeholder(Resource.Drawable.placeholder).Into(imageView);
-
-			// Recycle View (using CardView) for Attractions
-
-			mAttractionsList = new AttractionList(); // Data Source
+			mAttractionsList = new AttractionList();
 
 			// Instantiate the adapter and pass in its data source:
 			mAttractionListAdapter = new AttractionListAdapter(this, mAttractionsList);
@@ -62,7 +40,7 @@ namespace LongNeckNerd
 	
 		void OnAttractionClick(object sender, int position)
 		{
-			Toast.MakeText(this, "You are visiting " + mAttractionsList[position].mAttractionName, ToastLength.Short).Show();
+			// Toast.MakeText(this, "You are visiting " + mAttractionsList[position].mAttractionName, ToastLength.Short).Show();
 
 			// Go to Attraction Detail Activity
 			var serializedAttraction = JsonConvert.SerializeObject(mAttractionsList[position]);

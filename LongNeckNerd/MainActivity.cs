@@ -70,8 +70,7 @@ namespace LongNeckNerd
 
 		void OnAttractionClick(object sender, int position)
 		{
-			int attractionNum = position + 1;
-			Toast.MakeText(this, "This is attraction number " + attractionNum, ToastLength.Short).Show();
+			Toast.MakeText(this, "You are visiting " + mAttractionsList[position].mAttractionName, ToastLength.Short).Show();
 		}
 
 		private void prepareDatabase()

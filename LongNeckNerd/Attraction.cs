@@ -82,7 +82,7 @@ namespace LongNeckNerd
 
 			// Load Database (Try to optimize this into lazy loading - but might take up processing power.
 			var db = new SQLiteConnection(Attraction.DATABASE_PATH);
-			string query = "select ImageUrl as mAttractionImageURL, Description as mAttractionDescription from Attraction";
+			string query = "select ImageUrl as mAttractionImageURL, Name as mAttractionName from Attraction";
 			mAttractions = db.Query<Attraction>(query).ToArray();
 
 			// mCount = db.ExecuteScalar<int>("Select count(*) from Attraction;");

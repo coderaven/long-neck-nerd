@@ -42,7 +42,7 @@ namespace LongNeckNerd
 			Picasso.With(activityContext).Load(imageURL).Placeholder(Resource.Drawable.placeholder).Into(imagen);
 
 			// Load the photo caption from the photo album:
-			viewHolder.Description.Text = mAttracitonList[position].mAttractionDescription;
+			viewHolder.Description.Text = mAttracitonList[position].mAttractionName;
 		}
 
 		public override int ItemCount

@@ -2,17 +2,9 @@
 using Android.Widget;
 using Android.OS;
 using Android.Support.V7.Widget;
-
-using Android.Graphics;
-using System.Net;
-using Android.Content;
-
-using Android.Support.V7.CardView;
-using Square.Picasso;
-using SQLite;
 using System.IO;
-using System.Collections.Generic;
-using System;
+using Newtonsoft.Json;
+using Android.Content;
 
 namespace LongNeckNerd
 {
@@ -67,10 +59,16 @@ namespace LongNeckNerd
 			mLayoutManager = new LinearLayoutManager(this);
 			mRecycleViewAttractions.SetLayoutManager(mLayoutManager);
 		}
-
+	
 		void OnAttractionClick(object sender, int position)
 		{
 			Toast.MakeText(this, "You are visiting " + mAttractionsList[position].mAttractionName, ToastLength.Short).Show();
+
+			// Go to Attraction Detail Activity
+			var serializedAttraction = JsonConvert.SerializeObject(mAttractionsList[position]);
+			var attractionDetailsIntent = new Intent(this, typeof(AttractionDetailActivity));
+			attractionDetailsIntent.PutExtra("AttractionObject", serializedAttraction);
+			StartActivity(attractionDetailsIntent);
 		}
 
 		private void prepareDatabase()

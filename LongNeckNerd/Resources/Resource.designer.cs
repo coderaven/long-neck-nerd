@@ -1561,8 +1561,8 @@ namespace LongNeckNerd
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f090055
-			public const int action0 = 2131296341;
+			// aapt resource value: 0x7f090057
+			public const int action0 = 2131296343;
 			
 			// aapt resource value: 0x7f090042
 			public const int action_bar = 2131296322;
@@ -1588,8 +1588,8 @@ namespace LongNeckNerd
 			// aapt resource value: 0x7f090043
 			public const int action_context_bar = 2131296323;
 			
-			// aapt resource value: 0x7f090059
-			public const int action_divider = 2131296345;
+			// aapt resource value: 0x7f09005b
+			public const int action_divider = 2131296347;
 			
 			// aapt resource value: 0x7f090003
 			public const int action_menu_divider = 2131296259;
@@ -1621,14 +1621,14 @@ namespace LongNeckNerd
 			// aapt resource value: 0x7f09002c
 			public const int buttonPanel = 2131296300;
 			
-			// aapt resource value: 0x7f090056
-			public const int cancel_action = 2131296342;
+			// aapt resource value: 0x7f090058
+			public const int cancel_action = 2131296344;
 			
 			// aapt resource value: 0x7f09003a
 			public const int checkbox = 2131296314;
 			
-			// aapt resource value: 0x7f09005c
-			public const int chronometer = 2131296348;
+			// aapt resource value: 0x7f09005e
+			public const int chronometer = 2131296350;
 			
 			// aapt resource value: 0x7f09001e
 			public const int collapseActionView = 2131296286;
@@ -1657,8 +1657,8 @@ namespace LongNeckNerd
 			// aapt resource value: 0x7f09001b
 			public const int end = 2131296283;
 			
-			// aapt resource value: 0x7f090061
-			public const int end_padder = 2131296353;
+			// aapt resource value: 0x7f090063
+			public const int end_padder = 2131296355;
 			
 			// aapt resource value: 0x7f090026
 			public const int expand_activities_button = 2131296294;
@@ -1684,17 +1684,17 @@ namespace LongNeckNerd
 			// aapt resource value: 0x7f090051
 			public const int imageViewAttraction = 2131296337;
 			
-			// aapt resource value: 0x7f090060
-			public const int info = 2131296352;
+			// aapt resource value: 0x7f090062
+			public const int info = 2131296354;
 			
 			// aapt resource value: 0x7f090000
 			public const int item_touch_helper_previous_elevation = 2131296256;
 			
-			// aapt resource value: 0x7f09005a
-			public const int line1 = 2131296346;
+			// aapt resource value: 0x7f09005c
+			public const int line1 = 2131296348;
 			
-			// aapt resource value: 0x7f09005e
-			public const int line3 = 2131296350;
+			// aapt resource value: 0x7f090060
+			public const int line3 = 2131296352;
 			
 			// aapt resource value: 0x7f09000a
 			public const int listMode = 2131296266;
@@ -1702,8 +1702,8 @@ namespace LongNeckNerd
 			// aapt resource value: 0x7f090029
 			public const int list_item = 2131296297;
 			
-			// aapt resource value: 0x7f090058
-			public const int media_actions = 2131296344;
+			// aapt resource value: 0x7f09005a
+			public const int media_actions = 2131296346;
 			
 			// aapt resource value: 0x7f09001c
 			public const int middle = 2131296284;
@@ -1732,8 +1732,8 @@ namespace LongNeckNerd
 			// aapt resource value: 0x7f09003c
 			public const int radio = 2131296316;
 			
-			// aapt resource value: 0x7f090054
-			public const int recyclerViewAttractions = 2131296340;
+			// aapt resource value: 0x7f090056
+			public const int recyclerViewAttractions = 2131296342;
 			
 			// aapt resource value: 0x7f090016
 			public const int screen = 2131296278;
@@ -1807,8 +1807,8 @@ namespace LongNeckNerd
 			// aapt resource value: 0x7f090019
 			public const int src_over = 2131296281;
 			
-			// aapt resource value: 0x7f090057
-			public const int status_bar_latest_event_content = 2131296343;
+			// aapt resource value: 0x7f090059
+			public const int status_bar_latest_event_content = 2131296345;
 			
 			// aapt resource value: 0x7f09004d
 			public const int submit_area = 2131296333;
@@ -1816,20 +1816,26 @@ namespace LongNeckNerd
 			// aapt resource value: 0x7f09000c
 			public const int tabMode = 2131296268;
 			
-			// aapt resource value: 0x7f09005f
-			public const int text = 2131296351;
+			// aapt resource value: 0x7f090061
+			public const int text = 2131296353;
 			
-			// aapt resource value: 0x7f09005d
-			public const int text2 = 2131296349;
+			// aapt resource value: 0x7f09005f
+			public const int text2 = 2131296351;
 			
 			// aapt resource value: 0x7f090035
 			public const int textSpacerNoButtons = 2131296309;
 			
 			// aapt resource value: 0x7f090052
-			public const int textViewAttractionDescription = 2131296338;
+			public const int textViewAttractionName = 2131296338;
 			
-			// aapt resource value: 0x7f09005b
-			public const int time = 2131296347;
+			// aapt resource value: 0x7f090053
+			public const int textViewAttractionOneLineAddress = 2131296339;
+			
+			// aapt resource value: 0x7f090054
+			public const int textViewAttractionPrice = 2131296340;
+			
+			// aapt resource value: 0x7f09005d
+			public const int time = 2131296349;
 			
 			// aapt resource value: 0x7f09002b
 			public const int title = 2131296299;
@@ -1843,8 +1849,8 @@ namespace LongNeckNerd
 			// aapt resource value: 0x7f090009
 			public const int up = 2131296265;
 			
-			// aapt resource value: 0x7f090053
-			public const int urlImageView = 2131296339;
+			// aapt resource value: 0x7f090055
+			public const int urlImageView = 2131296341;
 			
 			// aapt resource value: 0x7f090013
 			public const int useLogo = 2131296275;

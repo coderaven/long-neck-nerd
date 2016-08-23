@@ -8,7 +8,7 @@ using Square.Picasso;
 
 namespace LongNeckNerd
 {
-	[Activity(Label = "AttractionDetailActivity")]
+	[Activity(Label = "Attraction Details", Theme = "@style/CustomActionBarTheme", Icon = "@mipmap/icon")]
 	public class AttractionDetailActivity : Activity
 	{
 		protected override void OnCreate(Bundle savedInstanceState)

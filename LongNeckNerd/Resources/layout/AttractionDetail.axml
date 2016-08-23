@@ -7,6 +7,8 @@
         android:src="@android:drawable/ic_menu_gallery"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:minHeight="203dp"
+        android:scaleType="fitStart"
         android:id="@+id/attractionDetailImage" />
     <TextView
         android:text="Attraction Name"
@@ -15,5 +17,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/attractionDetailText"
         android:textColor="@color/dark_brown"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="#66fff500"
+        android:padding="15dp" />
 </LinearLayout>

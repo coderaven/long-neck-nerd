@@ -8,4 +8,5 @@
   <color name="splash_background">#FFFFFF</color>
   <color name="bright_yellow">#fff500</color>
   <color name="dark_brown">#4b1b00</color>
+  <color name="black">#000</color>
 </resources>

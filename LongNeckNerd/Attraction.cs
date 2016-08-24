@@ -36,7 +36,7 @@ namespace LongNeckNerd
 
 			// Load Database (Try to optimize this into lazy loading - but might take up processing power.
 			var db = new SQLiteConnection(Attraction.DATABASE_PATH);
-			string query = "select Name as mAttractionName, ImageUrl as mAttractionImageURL, OneLineAddress as mAttractionOneLineAddress, Price as mAttractionPrice from Attraction";
+			string query = "select id as mAttracitionID, Name as mAttractionName, Description as mAttractionDescription, AddressLine1 as mAttractionAddressLine1, AddressLine2 as mAttractionAddressLine2, NearestMRT as mAttractionNearestMRT, Longitude as mAttractionLongitude,  ImageUrl as mAttractionImageURL, OneLineAddress as mAttractionOneLineAddress, Latitude as mAttractionLatitude, Category as mAttractionCategory, Price as mAttractionPrice from Attraction";
 			mAttractions = db.Query<Attraction>(query).ToArray();
 
 			// mCount = db.ExecuteScalar<int>("Select count(*) from Attraction;");

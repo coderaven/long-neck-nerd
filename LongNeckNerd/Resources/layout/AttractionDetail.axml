@@ -20,4 +20,35 @@
         android:textStyle="bold"
         android:background="#66fff500"
         android:padding="15dp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Attraction Type"
+            android:id="@+id/attractionTypeText"
+            android:gravity="left"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="$Price"
+            android:id="@+id/attractionPriceText"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <TextView
+        android:text="Spent too much time researching places you’re unsure of? Looking for advice on experiencing Singapore 'the local way'?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:id="@+id/attractionDescriptionText" />
 </LinearLayout>

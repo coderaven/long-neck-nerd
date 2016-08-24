@@ -27,6 +27,15 @@ namespace LongNeckNerd
 
 			// Display Attraction Name
 			FindViewById<TextView>(Resource.Id.attractionDetailText).Text = attraction.mAttractionName;
+
+			// Display Attraction Type
+			FindViewById<TextView>(Resource.Id.attractionTypeText).Text = attraction.mAttractionCategory;
+
+			// Display Attraction Price
+			FindViewById<TextView>(Resource.Id.attractionPriceText).Text = attraction.mAttractionPrice;
+
+			// Display Attraction Description
+			FindViewById<TextView>(Resource.Id.attractionDescriptionText).Text = attraction.mAttractionDescription;
 		}
 	}
 }
